@@ -1,0 +1,113 @@
+\documentclass[article,twoside]{combine}
+
+\usepackage[
+  paperheight=8.5in,
+  paperwidth=5.5in,
+  left=10mm,
+  right=10mm,
+  top=20mm,
+  bottom=20mm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[bottom]{footmisc}
+\usepackage{listings}
+\usepackage{enumitem}
+
+\usepackage{wrapfig}
+\usepackage{ragged2e}
+
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{hhline}
+\definecolor{palegreen}{rgb}{0.6,0.98,0.6}
+
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{hyphenat}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{url}
+
+\newcommand*{\affaddr}[1]{#1} % No op here. Customize it for different styles.
+\newcommand*{\affmark}[1][*]{\textsuperscript{#1}}
+\newcommand*{\email}[1]{\small{\texttt{#1}}}
+\newcommand{\tarot}{\textsc{Tarot}}
+\renewcommand*\contentsname{\centering Table of Contents}
+
+\renewcommand{\footnoterule}{%
+  \kern -3pt
+  \hrule width \textwidth height 0.5pt
+  \kern 2pt
+}
+
+\begin{document}
+
+\pagestyle{combine} % use the combine page style
+
+\thispagestyle{empty}
+\input{title}
+
+\clearpage
+
+% copyright page
+\null
+\vfill
+
+{\parindent0pt
+\textit{The Journal of Computing Sciences in Colleges}
+(ISSN 1937-4771 print, 1937-4763 digital) is published at least six times per
+year and constitutes the refereed papers of regional conferences sponsored by
+the Consortium for Computing Sciences in Colleges.  Printed in the USA.
+POSTMASTER: Send address changes to Susan Dean, CCSC Membership Secretary,
+89 Stockton Ave, Walton, NY 13856.
+
+\vspace{10pt}
+
+\input{copyright}
+}
+
+\clearpage
+
+\tableofcontents % main ToC
+
+\begin{papers}
+
+\coltoctitle{The Consortium for Computing Sciences in Colleges Board of
+Directors}
+\import{board_directors}
+
+\coltoctitle{CCSC National Partners \& Foreword}
+\import{national_partners}
+\import{foreword}
+
+\coltoctitle{Welcome --- CCSC:Name Year}
+\import{welcome}
+
+\coltoctitle{CCSC:Eastern Region and Conference Committees}
+\import{regional_committees}
+
+\coltoctitle{Reviewers --- CCSC:Name Year Conference}
+\import{reviewers}
+
+\coltoctitle{{NSF} Grant Workshop}
+\coltocauthor{Mark A. Pauley, {NSF}}
+\import{workshop_template}
+
+%papers
+\coltoctitle{Student Perceptions of Computing and Computing Majors}
+\coltocauthor{Jeffrey A. Stone, Pennsylvania State University}
+\import{195}
+
+%posters
+\coltoctitle{Courses of Blockchain Technology to Teach at a Career-Oriented
+College --- Poster Session}
+\coltocauthor{Penn Wu, DeVry University}
+\import{poster_template}
+
+\end{papers}
+
+\end{document}
