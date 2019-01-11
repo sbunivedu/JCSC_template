@@ -1,60 +1,6 @@
 \documentclass[article,twoside]{combine}
 
-\usepackage[
-  paperheight=8.5in,
-  paperwidth=5.5in,
-  left=10mm,
-  right=10mm,
-  top=20mm,
-  bottom=20mm]{geometry}
-\usepackage[utf8]{inputenc}
-
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage[bottom]{footmisc}
-\usepackage{listings}
-\usepackage{enumitem}
-
-\usepackage{wrapfig}
-\usepackage{ragged2e}
-
-\usepackage{array}
-\usepackage[table]{xcolor}
-\usepackage{multirow}
-\usepackage{booktabs}
-\usepackage{hhline}
-\definecolor{palegreen}{rgb}{0.6,0.98,0.6}
-
-\usepackage{amsmath}
-\usepackage{multicol}
-\usepackage{lipsum}
-\usepackage{hyphenat}
-\PassOptionsToPackage{hyphens}{url}
-\usepackage{url}
-
-\newcommand*{\affaddr}[1]{#1} % No op here. Customize it for different styles.
-\newcommand*{\affmark}[1][*]{\textsuperscript{#1}}
-\newcommand*{\email}[1]{\small{\texttt{#1}}}
-\newcommand{\tarot}{\textsc{Tarot}}
-\renewcommand*\contentsname{\centering Table of Contents}
-
-\renewcommand{\footnoterule}{%
-  \kern -3pt
-  \hrule width \textwidth height 0.5pt
-  \kern 2pt
-}
-
-% define variables
-\newcommand{\conf_ordinal}{00th}
-\newcommand{\conf_name}{*Eastern}
-\newcommand{\conf_dates}{*October 19th-20th}
-\newcommand{\conf_year}{*2018}
-\newcommand{\conf_school}{*Marymount University}
-\newcommand{\conf_city}{*Arlinton, VA}
-\newcommand{\journal_volume}{*34}
-\newcommand{\journal_number}{*3}
-\newcommand{\journal_month}{*January}
-\newcommand{\journal_year}{*2019}
+\input{preamble}
 
 \begin{document}
 
@@ -96,13 +42,13 @@ Directors}
 \import{national_partners}
 \import{foreword}
 
-\coltoctitle{Welcome --- CCSC:Name Year}
+\coltoctitle{Welcome --- CCSC:\confName\ \confYear}
 \import{welcome}
 
-\coltoctitle{CCSC:Eastern Region and Conference Committees}
+\coltoctitle{CCSC:\confName\ Region and Conference Committees}
 \import{regional_committees}
 
-\coltoctitle{Reviewers --- CCSC:Name Year Conference}
+\coltoctitle{Reviewers --- CCSC:\confName\ \confYear\ Conference}
 \import{reviewers}
 
 \coltoctitle{{NSF} Grant Workshop}
