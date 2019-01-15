@@ -12,3 +12,5 @@ paper23_1.png, paper23_2.png.
 ## Front matter
 0. define conference and journal information as variables in main.tex.
 0. update committee and other information as necessary.
+0. tweak spaces so that no text stick into margin, a short URL has no line break,
+  images are not too small, and etc.
