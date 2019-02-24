@@ -1,0 +1,18 @@
+Book title: The Journal of Computing Sciences in Colleges
+
+Subtitle: 34.3
+
+Series: The Journal of Computing Sciences in Colleges 34.3
+
+Keywords: CCSC
+
+Description:
+
+The Journal of Computing Sciences in Colleges contains the conference proceedings for each of the regional conferences sponsored by CCSC (Consortium for Computing Sciences in Colleges). It is distributed to around 600 faculty in over 350 colleges and universities electronically. The journal can also be found in the ACM Digital Library.
+
+This journal issue is for the 30th Annual CCSC South Central Conference on April 5th, 2019 at the University of Texas at Dallas.
+
+
+Trim size: 5.5x8.5
+
+Cover finish: Matte
