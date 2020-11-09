@@ -37,3 +37,34 @@ Author A\affmark[1], Author B\affmark[1], Author C\affmark[1], Author D\affmark[
 \maketitle
 \end{document}
 ```
+
+## add paper as pdf
+
+* empty the paper with blank pages
+```
+% generate 14 blank pages
+
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+\null\clearpage
+```
+
+* add paper to TOC as usual
+* typeset the paper on overleaf and set its start page number to the desired value
+```
+\begin{document}
+\setcounter{page}{128}
+\maketitle
+```
+* replace the blank pages in the journal with the pdf of the paper
