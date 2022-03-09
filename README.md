@@ -25,3 +25,27 @@ paper23_1.png, paper23_2.png.
 2. update committee and other information as necessary.
 3. tweak spaces so that no text stick into margin, a short URL has no line break,
   images are not too small, and etc.
+
+## To insert paper as pdfs
+
+* Add the following to `preamble.tex`:
+`\usepackage{pdfpages}`
+
+* Add the following to `paper.tex`:
+```
+\usepackage{biblatex}
+\addbibresource{paper1.bib}
+
+%% after \maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+```
+
+* Add the following to `main.tex`:
+```
+\coltoctitle{paper title}
+\coltocauthor{author, school}
+\import{paper.pdf}
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{paper.pdf} 
+```
+
